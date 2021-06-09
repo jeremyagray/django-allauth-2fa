@@ -7,3 +7,7 @@ TEMPLATE_EXTENSION = getattr(settings,
                              allauth_settings.TEMPLATE_EXTENSION)
 
 ALWAYS_REVEAL_BACKUP_TOKENS = bool(getattr(settings, 'ALLAUTH_2FA_ALWAYS_REVEAL_BACKUP_TOKENS', True))
+
+QRCODE_TYPE = getattr(settings,
+                      'ALLAUTH_2FA_QRCODE_TYPE',
+                      'data')
